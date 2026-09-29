@@ -1,0 +1,1 @@
+{% extends 'core/base.html' %}{% block content %}<h1>Return Reserve Book</h1><form method='post'>{% csrf_token %}<label>Book Barcode</label><input name='barcode' value='{{ request.GET.barcode|default:'' }}' required><button>Complete Return</button></form>{% endblock %}
